@@ -80,7 +80,7 @@ h5{
   padding-bottom: 5px
 }
 
-p{
+h6{
   font-size: 30px;
   font-family: verdana;
 }
@@ -99,9 +99,9 @@ section{
 	<ul>
 		<li><a href="#first">How to Install Java</a></li>
 		<li><a href="#second">How to Insall Eclipse</a></li>
-		<li><a href="#secondA">Window Users</a></li>
+<!-- 		<li><a href="#secA">Window Users</a></li> 		this doesnt work
 		<li><a href="#secB">Mac Users</a></li>
-		<li><a href="#secC">Linux Users</a></li>
+		<li><a href="#secC">Linux Users</a></li>		-->
 		<li><a href="#third">Download Calculator</a></li>
 		<li><a href="#fourth">Run Calculator</a></li>
 	</ul>
@@ -109,7 +109,7 @@ section{
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
 <section>
-	<p>Working Calculator</p>
+	<h6>Working Calculator</h6>
 	<h2>Co-authored by Kaitlyn Humphreys and Juliana Luczynski</h2>
 </section>
 <section>
@@ -125,17 +125,26 @@ section{
 		<h2>Step 1: Make sure you have already installed java</h2>
 		<h2>Step 2: Go to <a href="https://www.eclipse.org/downloads/packages/release/2019-06/r/eclipse-ide-java-developers/"> Eclipse</a> IDE for Java Developers</h2>
 		<h2>Step 3: Choose the download link for your platform (Windows, Mac, Linux)</h2>  <img src="pictures/2A.png" alt="choose link" width="575" height="274">
-			<h3 id = "secondA">Window Users:</h3>
-				<h4>1. Unzip the download file into a directory of your choice</h4>
-			<h3 id = "secB">Mac Users:</h3>
-				<h4>1.	Double click the download image (DMG file)</h4>
+			<button class="collapsible">Window Users:</button>
+			<div class="content">
+		 		<h4>1. Unzip the download file into a directory of your choice</h4>
+			</div>
+			<button class="collapsible">Mac Users:</button>
+			<div class="content">
+			 	<h4>1.	Double click the download image (DMG file)</h4>
 				<h4>2.	Follow the on-screen instructions to download</h4>
 				<h4>3.	Eclipse will be installed under /Applications/eclipse directory</h4>
-			<h3 id = "secC">Linux Users:</h3>
+			</div>
+			<button class="collapsible">Linux Users:</button>
+			<div class="content">
 				<h4>1.	Install eclipse under /usr/local</h4> <img src="pictures/2B.png" alt="linux" width="521" height="317">
 				<h4>2.	To run: open /usr/local/eclipse click on the “Eclipse icon” or to start a terminal enter “eclipse”</h4>
-			<h3>If the download doesn't work, under more downloads Luna or Oxygen are good substitutes.</h3> 
-			<h3>Make sure it is still the Java Developers version.</h3><img src="pictures/2C.png" alt="Oxygen" width="496" height="321">
+			</div>
+			<button class="collapsible">Having trouble?</button>
+			<div class="content">
+				<h3>If the download doesn't work, under more downloads Luna or Oxygen are good substitutes.</h3> 
+				<h3>Make sure it is still the Java Developers version.</h3><img src="pictures/2C.png" alt="Oxygen" width="496" height="321">
+			</div>
 </section>
 
     <h1 id = "third">Download Calculator:</h1>
